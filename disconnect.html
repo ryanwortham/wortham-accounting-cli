@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Disconnect | Wortham Accounting CLI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="shell nav"><a class="brand" href="index.html">Wortham Accounting CLI</a><nav aria-label="Primary"><a href="connect.html">Connect</a><a href="disconnect.html" aria-current="page">Disconnect</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+  <main class="shell"><article class="document">
+    <div class="eyebrow">Access removal</div>
+    <h1>Disconnect and delete local authorization</h1>
+    <p>An authorized administrator can remove the utility’s access to QuickBooks Online and delete the local authorization from the Mac.</p>
+    <h2>1. Revoke the Intuit connection</h2>
+    <ol>
+      <li>Sign in to QuickBooks Online as an administrator.</li>
+      <li>Open Apps or Connected apps.</li>
+      <li>Find Wortham Accounting CLI and choose Disconnect or Revoke.</li>
+      <li>Confirm the disconnection.</li>
+    </ol>
+    <h2>2. Remove local authorization</h2>
+    <p>On the authorized Mac, open Keychain Access and delete the Wortham Accounting CLI item for the <code>profile:little-king</code> account under the <code>com.via.qbo-cli</code> service. This removes the locally stored OAuth authorization for that profile.</p>
+    <h2>3. Delete exported reports</h2>
+    <p>The CLI does not automatically retain retrieved reports. If an authorized user deliberately exported a report, delete that file separately from its saved location and any backups where deletion is required.</p>
+    <div class="notice"><strong>Result:</strong> After Intuit revocation and local removal, the CLI can no longer retrieve data for that QuickBooks company unless a user completes a new authorization.</div>
+    <h2>Assistance</h2>
+    <p>For help removing access, contact <a href="mailto:ryan@pizzaworldusa.net">ryan@pizzaworldusa.net</a>.</p>
+  </article></main>
+  <footer><div class="shell"><p>Operated by Wortham Business Tools for authorized Little King Inc personnel.</p><p>Not affiliated with or endorsed by Intuit Inc. QuickBooks is a trademark of Intuit Inc.</p></div></footer>
+</body>
+</html>

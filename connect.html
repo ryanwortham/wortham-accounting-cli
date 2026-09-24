@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Connect | Wortham Accounting CLI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="shell nav"><a class="brand" href="index.html">Wortham Accounting CLI</a><nav aria-label="Primary"><a href="connect.html" aria-current="page">Connect</a><a href="disconnect.html">Disconnect</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+  <main class="shell"><article class="document">
+    <div class="eyebrow">Authorized personnel only</div>
+    <h1>Connect QuickBooks Online</h1>
+    <p>Wortham Accounting CLI is a private internal tool. Connection requires approval from Wortham Business Tools and authorization from a user who has access to Little King Inc in QuickBooks Online.</p>
+    <div class="notice"><strong>Before connecting:</strong> Review the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</div>
+    <h2>Connection steps</h2>
+    <ol>
+      <li>On the authorized Mac, open Terminal.</li>
+      <li>Run <code>qbo connect --profile little-king</code>.</li>
+      <li>Sign in to Intuit in the browser window that opens.</li>
+      <li>Select Little King Inc and approve the requested QuickBooks accounting connection.</li>
+      <li>Return to Terminal and confirm that the company profile is connected.</li>
+    </ol>
+    <h2>Permission scope</h2>
+    <p>Intuit’s accounting authorization may be broader than individual report calls. The local CLI nevertheless enforces GET-only accounting-data transport and refuses unsupported write and reconciliation commands.</p>
+    <h2>Need to remove access?</h2>
+    <p>Follow the <a href="disconnect.html">disconnect and deletion instructions</a>.</p>
+  </article></main>
+  <footer><div class="shell"><p>Operated by Wortham Business Tools for authorized Little King Inc personnel.</p><p>Not affiliated with or endorsed by Intuit Inc. QuickBooks is a trademark of Intuit Inc.</p></div></footer>
+</body>
+</html>
