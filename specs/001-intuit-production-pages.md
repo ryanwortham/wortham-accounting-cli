@@ -18,6 +18,7 @@ Publish the minimum public HTTPS pages Intuit requires for a private, read-only 
 - `/terms.html` — end-user terms
 - `/connect.html` — connection instructions
 - `/disconnect.html` — disconnection and deletion instructions
+- `/oauth-callback.html` — noindex OAuth response bridge that forwards the unchanged query to the CLI's loopback listener without storing or logging it
 
 ## Functional and security claims
 
@@ -28,6 +29,7 @@ Publish the minimum public HTTPS pages Intuit requires for a private, read-only 
 - OAuth tokens and app credentials are stored in macOS Keychain.
 - Retrieved accounting data is processed locally and is retained only when an authorized user deliberately exports it.
 - The public site contains no analytics, cookies, forms, trackers, credentials, OAuth tokens, or QuickBooks company data.
+- The OAuth callback bridge does not persist or transmit the authorization response anywhere except the local loopback listener on the authorized Mac.
 
 ## UX requirements
 
